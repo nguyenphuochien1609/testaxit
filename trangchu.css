@@ -1,0 +1,572 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+  
+}
+:root {
+    --primary: #ff8b38;
+    --white: #ffffff;
+  }
+
+  .divider-white {
+    border-bottom: 1px solid var(--white);
+    width: 74px;
+    margin: 10px 0;
+  }
+  .divider-primary {
+    border-bottom: 1px solid var(--primary);
+    width: 74px;
+    margin: 10px 0;
+  }
+  
+  .text-primaryfree {
+    color: var(--primary);
+  }
+  
+  .wrapper {
+    padding: 0 150px;
+    box-sizing: border-box;
+  }
+  @media (max-width: 992px) {
+    .wrapper {
+        padding: 0 15px;
+      }
+      header{
+        height: auto!important;
+        flex-direction: column;
+      }
+      header .left{
+        text-align: center;
+      }
+      header .right{
+        padding: 20px 0;
+      }
+      .line-banner{
+        display: flex;
+        justify-content: center;
+      }
+  }
+  
+/* Start Navbar */
+
+.navbar {
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.navbar li {
+    padding: 8px;
+}
+
+.navbar-header a {
+    margin-top: 8px;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #dedede
+}
+
+.navbar.nav-scrolled {
+    background: rgba(0, 0, 0, .8);
+}
+
+.navbar>.container .navbar-brand {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar>.container .navbar-brand span {
+    color: #ff8b38;
+    font-weight: 300
+}
+
+/* End Navbar */
+
+
+/* Header --------------------------------------------- */
+
+header {
+    height: 713px;
+    background-image: url(./images/image.png);
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding-top: 75px !important;
+  }
+  
+  header .left,
+  header .right {
+    flex: 1;
+  }
+  
+  header .left .title {
+    font-size: 36px;
+    color: #ffffff;
+    font-family: "Raleway";
+    padding: 20px 0;
+  }
+  
+  header .left .desc {
+    opacity: 0.8;
+    font-size: 16px;
+    line-height: 23px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Raleway";
+    padding-top: 20px;
+  }
+  
+  .download-btn {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Open Sans";
+    background-color: transparent;
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    margin-top: 30px;
+  }
+  
+  header .right {
+    flex: 1;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .signup-form {
+    width: 360px;
+    background-color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .signup-form .title {
+    font-size: 20px;
+    color: #333333;
+    font-weight: 700;
+    font-family: "Open Sans";
+    background-color: #f4f4f4;
+    line-height: 54px;
+  }
+  
+  .group-input {
+    padding: 0 40px;
+  }
+  
+  .group-input :last-child {
+    margin-bottom: 40px;
+  }
+  
+  .signup-form form input {
+    font-size: 14px;
+    color: #bdbdbd;
+    font-weight: 400;
+    font-family: "Open Sans";
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+    padding: 5px 14px;
+    box-sizing: border-box;
+    margin-top: 40px;
+  }
+  
+  .signup-form button {
+    border: none;
+    background: var(--primary);
+    width: 100%;
+    height: 54px;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Open Sans";
+  }
+  /* Header --------------------------------------------- */
+
+/* Feature */
+
+.tab-section {
+    background: #f5f5f5;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .tab-section li {
+    background: #333;
+    color: #fff;
+    height: 110px;
+    line-height: 110px;
+    width: 110px;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+  }
+  
+  .tab-section li.selected,
+  .tab-section li:hover {
+    background: #ff8b38;
+  }
+  
+  .tab-section .tab-content>div:not(.tab-1) {
+    display: none
+  }
+  
+  .tab-section h4 {
+    font-weight: 700;
+    margin-bottom: 35px;
+  }
+  
+  .tab-section p {
+    color: #86878b;
+  }
+  
+  .tab-section button {
+    background: #ff8b38;
+    color: #fff;
+    margin-top: 30px;
+    padding: 10px 20px;
+  }
+  
+  .tab-section button:hover {
+    background: #f79956;
+    color: #fff;
+  }
+  
+  .tab-section img {
+    margin-top: 30px;
+  }
+
+  @media(max-width: 991px) {
+    .tab-section {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .tab-section li {
+        width: 33.33333%;
+        float: left;
+        border-right: 1px solid #fff;
+        border-bottom: 0;
+        margin-bottom: 15px;
+    }
+
+    .tab-section img {
+        margin-top: 100px;
+    }
+}
+  
+  /* End Tab Feature*/
+  
+  /* Out Process --------------------------------------------- */
+  
+  .sub-list {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .sub-list img {
+    margin-top: 40px;
+    box-shadow: 0px 0px 57px #a2a2a2;
+    ;
+    -webkit-box-shadow: 0px 0px 57px #a2a2a2;
+    ;
+    -moz-box-shadow: 0px 0px 57px #a2a2a2;
+    ;
+    -o-box-shadow: 0px 0px 57px #a2a2a2;
+    ;
+  }
+  
+  .sub-list .content>h4 {
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  
+  .sub-list hr {
+    border-top: 2px solid #ff8b38;
+    width: 70px;
+    float: left;
+  }
+  
+  .sub-list p {
+    color: #86878b;
+  }
+  .media{
+    display: flex;
+  }
+  .media-body{
+    padding: 20px;
+  }
+  .sub-list .media svg {
+    color: #ff8b38;
+    border: 2px solid #ff8b38;
+    border-radius: 50%;
+    padding: 10px;
+    line-height: 100%;
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 60px;
+    height: 60px;
+  }
+  
+  
+  /* Start Standard-pic Section */
+  
+  .standard-pic {
+    background: #f5f5f5;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .standard-pic img {
+    box-shadow: 0px 0px 57px #a2a2a2;
+    ;
+    -webkit-box-shadow: 0px 0px 57px #a2a2a2;
+    ;
+    -moz-box-shadow: 0px 0px 57px #a2a2a2;
+    ;
+    -o-box-shadow: 0px 0px 57px #a2a2a2;
+    ;
+  }
+  
+  .standard-pic .content>h4 {
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  
+  .standard-pic hr {
+    border-top: 2px solid #ff8b38;
+    width: 70px;
+    float: left;
+  }
+  
+  .standard-pic p {
+    color: #86878b;
+  }
+  
+  /* End Standard-pic Section */
+  
+  /* Start Features Section */
+  
+  .features {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .features h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 0;
+  }
+  
+  .features hr {
+    border-top: 3px solid #ff8b38;
+    width: 70px;
+    opacity: 1;
+  }
+  
+  .features p {
+    color: #86878b;
+  }
+  
+  .features .content {
+    margin-top: 60px
+  }
+  
+  .features .content svg {
+    color: #ff8b38;
+    border: 2px solid #ff8b38;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    line-height: 80px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+  
+  .features .content .fa-keyboard-o {
+    line-height: 73px;
+  }
+  
+  .features .content h4 {
+    font-weight: 700;
+    margin: 25px 0;
+  }
+  .line{
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* End Features Section */
+  
+  /* Custom --------------------------------------------- */
+  
+  .stylish {
+    background: url('images/u25_state0.png') no-repeat top center;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+    background-color: #434040;
+    min-height: 200px;
+    color: #fff;
+  }
+  
+  .stylish .overlay {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .stylish h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #fff
+  }
+  
+  .stylish hr {
+    border-top: 4px solid #fff;
+    width: 80px;
+  }
+  
+  .stylish p {
+    color: #c5c6c3;
+    padding-top: 10px;
+  }
+  
+  .stylish button {
+    background: none;
+    border: 2px solid #fff;
+    padding: 8px 25px;
+    margin-top: 30px;
+    color: #fff
+  }
+  
+  .stylish button:hover {
+    cursor: pointer;
+  }
+  .line1{
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Custom --------------------------------------------- */
+  
+  /* Contact --------------------------------------------- */
+  .contact {
+    background-color: #fff;
+    min-height: 200px;
+  }
+  /* Start Contact-us Section */
+  
+  .contact {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .contact h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 0;
+  
+  }
+  
+  
+  .divider-primary {
+    border-bottom: 3px solid var(--primary);
+    width: 80px;
+    margin: 10px 0;
+  }
+  
+  .contact p {
+    color: #86878b;
+  }
+  
+  .contact .form-control {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    display: block;
+    width: 80%;
+    padding: 45px 10px 15px;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #c1c1c1;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333;
+  }
+  
+  .contact form textarea {
+    height: 183px;
+    resize: none;
+  }
+  
+  .contact form .btn {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 45px;
+    padding: 15px 25px;
+    background: #ff8b38;
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .contact form .btn:hover {
+    color: #fff;
+    background: #ff9b51;
+  }
+  
+  .line2{
+    display: flex;
+    justify-content: center;
+  }
+  .button{
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* End Contact-us Section */
+  /* Start Footer */
+  
+  .footer {
+    background: #000;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .footer .icon svg {
+    color: #ccc;
+    margin-right: 20px;
+  }
+  
+  .footer .icon svg:hover {
+    cursor: pointer;
+    color: #fff
+  }
+  
+  .footer p {
+    color: #ccc;
+    padding-top: 15px;
+    margin-bottom: 0
+  }
+  
+  /* End Footer */
+  
